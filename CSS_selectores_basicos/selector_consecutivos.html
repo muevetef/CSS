@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector descendientes</title>
+    <style>
+        div {
+            border: red 3px solid;
+            margin: 10px;
+            padding: 10px;
+            
+        }
+        /* Selector de consecutivos */
+        div + p {
+            color: red;
+        }
+        
+    </style>
+</head>
+<body>
+    <p>Esto es un párrafo&lt;p&gt;</p>
+    <div>
+        <p>
+            Esto es un parrafo&lt;p&gt;
+        </p>
+        <ul>
+            <li>Esto es un Item de una lista
+                <p>Esto es un párrafo dentro de una lista</p>
+            </li>
+            <li>Esto es otro item de la lista</li>
+        </ul>
+        <p>Otro párrafo&lt;p&gt;</p>
+        <address>Soy una dirección de algo&lt;address&gt;</address>
+    </div>
+    <p>Otro párrafo más &lt;p&gt;</p>
+    <p>Estoy harto de párrafos&lt;p&gt;</p>
+    
+    
+</body>
+</html>
